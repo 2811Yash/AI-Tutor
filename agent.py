@@ -3,7 +3,6 @@ from agno.agent import Agent
 from agno.models.google import Gemini
 
 
-# Define Physics Tutor Agent
 physics_agent = Agent(
     name="Physics Tutor",
     role="Expert physics tutor who explains concepts clearly using real-world examples and equations.",
@@ -17,7 +16,6 @@ physics_agent = Agent(
     markdown=True
 )
 
-# Define Chemistry Tutor Agent
 chemistry_agent = Agent(
     name="Chemistry Tutor",
     role="Expert chemistry tutor who explains chemical reactions, structures, and concepts clearly.",
@@ -43,11 +41,8 @@ if st.button("Get Answer"):
     else:
         with st.spinner("Thinking..."):
             if subject == "Physics":
-                response=physics_agent.print_response(query)
-                print(response)
-                st.write(response)
+                response = chemistry_agent.run(query, stream=False)
             else:
                 response = chemistry_agent.run(query, stream=False)
-                print(response)
         st.markdown("### 📘 Answer:")
         st.markdown(response.content)
