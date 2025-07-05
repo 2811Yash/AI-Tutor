@@ -56,4 +56,4 @@ Integrate student performance tracking
 Enable voice input for accessibility
 
 👨‍🏫 Developed By
-Built with 💡 by Yash Patil using open-source tools, Agno agents, and Gemini AI to simplify science education.
+Built with 💡 by Yash Patil and Madhav Mali using open-source tools, Agno agents, and Gemini AI to simplify science education.
