@@ -42,6 +42,7 @@ if st.button("Get Answer"):
         with st.spinner("Thinking..."):
             if subject == "Physics":
                 response = physics_agent.run(query, stream=False)
+                #edited the phisics agent name .
             else:
                 response = chemistry_agent.run(query, stream=False)
         st.markdown("### 📘 Answer:")
