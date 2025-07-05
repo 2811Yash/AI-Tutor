@@ -2,6 +2,7 @@ import streamlit as st
 from agno.agent import Agent
 from agno.models.google import Gemini
 
+# agents
 
 physics_agent = Agent(
     name="Physics Tutor",
@@ -43,6 +44,7 @@ if st.button("Get Answer"):
             if subject == "Physics":
                 response = physics_agent.run(query, stream=False)
                 #edited the phisics agent name .
+
             else:
                 response = chemistry_agent.run(query, stream=False)
         st.markdown("### 📘 Answer:")
