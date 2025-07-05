@@ -31,7 +31,7 @@ Python	Core programming logic
 
 🔧 Getting Started
 # 1. Clone the repo
-git clone https://github.com/your-username/ai-tutor-agents.git
+git clone https://github.com/2811Yash/ai-tutor-agents.git
 cd ai-tutor-agents
 # 2. Install dependencies
 
