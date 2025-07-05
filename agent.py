@@ -8,7 +8,7 @@ physics_agent = Agent(
     role="Expert physics tutor who explains concepts clearly using real-world examples and equations.",
     model=Gemini(id="gemini-2.0-flash"),
     instructions=[
-        "Answer as a physics tutor.",
+        "Answer as a supersmart physics tutor.",
         "Use simple language with analogies.",
         "Provide formulas and diagrams (as markdown if needed).",
         "Be patient and explain step-by-step."
